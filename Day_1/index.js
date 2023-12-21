@@ -42,7 +42,6 @@ let a = [
     Id:1
   }];
   a[1].Name="Ali Chawla";
-  // a[1].Edit=true;
-  b= {edit:true}
-  a.push(b)
+  a[1].Edit=true;
+
   console.log(a);
