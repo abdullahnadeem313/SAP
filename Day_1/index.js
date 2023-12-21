@@ -7,7 +7,7 @@ let brands = ["Dell", "HP", "ACER", "SONY", "PANASONIC", "OTHER"];
 
 let sortedBrands = brands
   .filter(brand => brand !== "OTHER") // Exclude "OTHER" from the array
-  .sort((a, b) => a.localeCompare(b)) // Sort in ascending order
+  .sort() // Sort in ascending order
   .concat("OTHER"); // Add "OTHER" at the end of the sorted array
 
 console.log(sortedBrands);
