@@ -19,8 +19,15 @@ console.log("Assignment 2");
 // 2. Remove duplicate from the list.
 
 let emails = ["Ali@test.COM", "Umair@test.com", "Ahmad@test.com", "Umair@Test.Com"];
+    
+let uniqueEmailsSet = new Set();
 
-let uniqueEmailsSet = new Set(emails);
+emails.forEach( 
+    email =>{
+      // convert each element of array in lowercase
+      uniqueEmailsSet.add(email.toLowerCase());
+    }
+  )
 
 let uniqueEmails = Array.from(uniqueEmailsSet);
 
