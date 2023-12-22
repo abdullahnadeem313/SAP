@@ -12,7 +12,7 @@ function fetchData(callback) {
 
 //callback
 fetchData(() => {
-    console.log("Data fetched Successfully");
+    console.log("Data fetch Successful with callbacks");
 })
 
 
