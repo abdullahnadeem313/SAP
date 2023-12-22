@@ -57,7 +57,7 @@ function rejectPromise() {
 let rejectedPromise = rejectPromise()
 rejectedPromise.catch((err)=>{
         console.log("Assignment 3");
-        console.log("Error occured: " + err);
+        console.error("Error occured: " + err);
 })
 
 
