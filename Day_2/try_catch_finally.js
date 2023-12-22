@@ -1,5 +1,4 @@
 console.log("Try Catch finally throw");
-console.log("It only handles runtime error not parse time errors");
 try {
     console.log("Try");
     errVar;
@@ -8,14 +7,15 @@ try {
     console.log("Catch");
     console.log("Error has occured " + error);
 } finally {
-    console.log("Finally");
+    
+    console.log("Finally Run even after return statement");
 }
 
 console.log("Code continues to excute after try catch")
 
 
 
-let json =  { "age":30 }
+let json =  '{ "age":30 }'
 
 try {
     let user = JSON.parse(json)
