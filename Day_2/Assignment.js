@@ -66,10 +66,13 @@ rejectedPromise.catch((err)=>{
 // and logs the message after the simulated operation is complete.
 
 function getData () {
-    setTimeout(() => {
-        console.log("Assignment 4");
-        console.log("Data fetch successful with Aync Await");
-    }, 2000);
+    new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Assignment 4");
+            console.log("Data fetch successful with Aync Await");
+        }, 2000);    
+    })
+    
 }
 async function fetchDataAsync(){
     await getData()
