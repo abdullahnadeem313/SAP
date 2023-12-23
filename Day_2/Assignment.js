@@ -70,6 +70,7 @@ function getData () {
         setTimeout(() => {
             console.log("Assignment 4");
             console.log("Data fetch successful with Aync Await");
+            resolve("Success")
         }, 2000);    
     })
     
